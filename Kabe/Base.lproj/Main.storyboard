@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comili-Book.otf">
+            <string>Comili-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Mäng-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Mäng" id="BYZ-38-t0r" customClass="ViewController" customModule="Kabe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Taust" translatesAutoresizingMaskIntoConstraints="NO" id="coi-9S-fUy">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psk-9I-AaS" userLabel="1-A">
+                                <rect key="frame" x="128" y="256" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JxU-N6-ykt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRt-6w-4vu" userLabel="2-A">
+                                <rect key="frame" x="192" y="256" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Must-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_2A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k8X-Xa-PZT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZk-YY-8kM" userLabel="3-A">
+                                <rect key="frame" x="256" y="256" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_3A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wgc-qf-HgV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pv8-t6-67V" userLabel="4-A">
+                                <rect key="frame" x="320" y="256" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Must-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_4A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="urC-QA-VRy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfk-lh-274" userLabel="5-A">
+                                <rect key="frame" x="384" y="256" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_5A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XtR-yC-Hcb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkz-xo-0Ts" userLabel="6-A">
+                                <rect key="frame" x="448" y="256" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Must-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_6A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nAv-CA-Vwj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pkf-jA-9ZB" userLabel="7-A">
+                                <rect key="frame" x="512" y="256" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_7A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MKL-nU-EiK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkO-Ux-gyM" userLabel="8-A">
+                                <rect key="frame" x="576" y="256" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Must-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_8A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7j-dh-XeN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hp9-SD-Rnx" userLabel="1-B">
+                                <rect key="frame" x="128" y="320" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Must-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_1B:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IUs-Ls-v2L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h20-Ny-bie" userLabel="2-B">
+                                <rect key="frame" x="192" y="320" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_2B:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QAQ-FM-q0U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Et-y7-uYd" userLabel="3-B">
+                                <rect key="frame" x="256" y="320" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Must-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_3B:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b77-BA-bDI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Q6-Ic-KzV" userLabel="4-B">
+                                <rect key="frame" x="320" y="320" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_4B:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p7s-wQ-NFP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qo2-oj-9ye" userLabel="5-B">
+                                <rect key="frame" x="384" y="320" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Must-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_5B:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XwG-PS-vgP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeG-3H-ih2" userLabel="6-B">
+                                <rect key="frame" x="448" y="320" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_6B:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6SL-h4-M7T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afx-Jk-MdH" userLabel="7-B">
+                                <rect key="frame" x="512" y="320" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Must-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_7B:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x4c-Z4-ap9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3le-pf-tOx" userLabel="8-B">
+                                <rect key="frame" x="576" y="320" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_8B:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mf3-IH-zmh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syR-yO-zdP" userLabel="1-C">
+                                <rect key="frame" x="128" y="384" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1C:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RYj-Yf-Ary"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrC-hQ-k4z" userLabel="2-C">
+                                <rect key="frame" x="192" y="384" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Must-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_2C:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P6H-Bv-2D2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayG-jp-GYZ" userLabel="3-C">
+                                <rect key="frame" x="256" y="384" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_3C:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jSR-NI-jgQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIk-K7-D2j" userLabel="4-C">
+                                <rect key="frame" x="320" y="384" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Must-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_4C:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xlf-eZ-E5R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erq-JH-xab" userLabel="5-C">
+                                <rect key="frame" x="384" y="384" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_5C:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9os-ox-Ezk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddi-Cc-ItB" userLabel="6-C">
+                                <rect key="frame" x="448" y="384" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Must-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_6C:" destination="BYZ-38-t0r" eventType="touchUpInside" id="53d-Mz-PJc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Pa-72-Ab8" userLabel="7-C">
+                                <rect key="frame" x="512" y="384" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_7C:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1UG-pr-XAR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deY-mI-68r" userLabel="8-C">
+                                <rect key="frame" x="576" y="384" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Must-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_8C:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yFG-N0-Ck3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydS-0v-OO9" userLabel="1-D">
+                                <rect key="frame" x="128" y="448" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1D:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAs-u7-kWE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4g-E1-T4l" userLabel="2-D">
+                                <rect key="frame" x="192" y="448" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_2D:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ra0-dh-V8H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="27" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dm9-Qv-3Ji" userLabel="3-D">
+                                <rect key="frame" x="256" y="448" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_3D:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxn-ak-mH0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="28" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfE-bk-7cG" userLabel="4-D">
+                                <rect key="frame" x="320" y="448" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_4D:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zsM-Q6-NG8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="29" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSW-CF-pb5" userLabel="5-D">
+                                <rect key="frame" x="384" y="448" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_5D:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zv8-qR-mKz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="30" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogz-w3-I1B" userLabel="6-D">
+                                <rect key="frame" x="448" y="448" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_6D:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UYe-uk-1Zu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="31" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTe-WI-8Qh" userLabel="7-D">
+                                <rect key="frame" x="512" y="448" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_7D:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Yk-pa-ChM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVk-kC-lae" userLabel="8-D">
+                                <rect key="frame" x="576" y="448" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_8D:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fLn-07-mnA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="33" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFx-hU-pHN" userLabel="1-E">
+                                <rect key="frame" x="128" y="512" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1E:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aP3-22-4Fu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="34" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bu9-C2-cwV" userLabel="2-E">
+                                <rect key="frame" x="192" y="512" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_2E:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Dp-JQ-0US"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="35" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYC-V5-4tg" userLabel="3-E">
+                                <rect key="frame" x="256" y="512" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_3E:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0CX-Mk-MI7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="36" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLS-4L-SXD" userLabel="4-E">
+                                <rect key="frame" x="320" y="512" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_4E:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wHl-2y-b7Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="37" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlx-cK-OLt" userLabel="5-E">
+                                <rect key="frame" x="384" y="512" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_5E:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C6L-OI-Gxf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="38" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgj-ht-zLv" userLabel="6-E">
+                                <rect key="frame" x="448" y="512" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_6E:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djT-WQ-SIx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="39" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSW-dx-PUc" userLabel="7-E">
+                                <rect key="frame" x="512" y="512" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_7E:" destination="BYZ-38-t0r" eventType="touchUpInside" id="71i-HS-CWm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="40" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bo-az-jG9" userLabel="8-E">
+                                <rect key="frame" x="576" y="512" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_8E:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vLp-ln-92g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="41" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnL-RJ-r27" userLabel="1-F">
+                                <rect key="frame" x="128" y="576" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Punane-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_1F:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SgL-H2-ZUL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="42" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVH-yJ-ALP" userLabel="2-F">
+                                <rect key="frame" x="192" y="576" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_2F:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3m-7m-g1l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="43" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooq-th-UOA" userLabel="3-F">
+                                <rect key="frame" x="256" y="576" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Punane-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_3F:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ttp-6N-IO6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="44" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqF-27-yDp" userLabel="4-F">
+                                <rect key="frame" x="320" y="576" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_4F:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bqa-dY-cBN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="45" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbd-1M-3a2" userLabel="5-F">
+                                <rect key="frame" x="384" y="576" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Punane-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_5F:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NUz-il-7pI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="46" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNs-La-aLs" userLabel="6-F">
+                                <rect key="frame" x="448" y="576" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_6F:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KdA-h6-Cii"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="47" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="js4-MN-xuh" userLabel="7-F">
+                                <rect key="frame" x="512" y="576" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Punane-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_7F:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L4w-lN-TxU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="48" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6w-yN-1li" userLabel="8-F">
+                                <rect key="frame" x="576" y="576" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_8F:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12G-Xy-hZM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="49" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itj-Mt-ugF" userLabel="1-G">
+                                <rect key="frame" x="128" y="640" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1G:" destination="BYZ-38-t0r" eventType="touchUpInside" id="45v-Zd-FNO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="50" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nz4-0f-9rB" userLabel="2-G">
+                                <rect key="frame" x="192" y="640" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Punane-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_2G:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nha-kL-QeM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="51" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0Q-EA-tRK" userLabel="3-G">
+                                <rect key="frame" x="256" y="640" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_3G:" destination="BYZ-38-t0r" eventType="touchUpInside" id="De7-be-S79"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="52" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dw-uM-ipW" userLabel="4-G">
+                                <rect key="frame" x="320" y="640" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Punane-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_4G:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d3B-To-Kkn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="53" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="235-4b-JYi" userLabel="5-G">
+                                <rect key="frame" x="384" y="640" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_5G:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rTh-E4-vhZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="54" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLk-df-Sdh" userLabel="6-G">
+                                <rect key="frame" x="448" y="640" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Punane-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_6G:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1wt-HT-n4i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="55" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGm-eK-ZFy" userLabel="7-G">
+                                <rect key="frame" x="512" y="640" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_7G:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PfV-tf-VTP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="56" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJW-vc-W5Q" userLabel="8-G">
+                                <rect key="frame" x="576" y="640" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Punane-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_8G:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fXb-Od-e3O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="57" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8N-Eo-z72" userLabel="1-H">
+                                <rect key="frame" x="128" y="704" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Punane-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_1H:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RCE-wu-5X9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="58" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sil-qr-3kY" userLabel="2-H">
+                                <rect key="frame" x="192" y="704" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_2H:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xf7-JL-GoY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="59" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCO-1X-EuT" userLabel="3-H">
+                                <rect key="frame" x="256" y="704" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Punane-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_3H:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RU2-Si-KtC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="60" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXf-Xu-64P" userLabel="4-H">
+                                <rect key="frame" x="320" y="704" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_4H:" destination="BYZ-38-t0r" eventType="touchUpInside" id="47c-Yv-gZ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="61" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uei-MT-ipr" userLabel="5-H">
+                                <rect key="frame" x="384" y="704" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Punane-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_5H:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0dI-ca-B3H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="62" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQZ-Aa-BAO" userLabel="6-H">
+                                <rect key="frame" x="448" y="704" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_6H:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mul-BI-qqc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="63" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRb-a0-YCB" userLabel="7-H">
+                                <rect key="frame" x="512" y="704" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Punane-Nupp-1"/>
+                                <connections>
+                                    <action selector="Vajutati_7H:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zii-Ia-SZv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="64" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3b-ly-aW8" userLabel="8-H">
+                                <rect key="frame" x="576" y="704" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_8H:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TfU-d2-P8C"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="3Pp-Vy-AeN" userLabel="Silt">
+                                <rect key="frame" x="209" y="90" width="322" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Comili-Book" family="Comili" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScN-dm-UgY" userLabel="Must-Seis">
+                                <rect key="frame" x="210" y="147" width="60" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Comili-Book" family="Comili" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLC-OM-pqe" userLabel="Punane-Seis">
+                                <rect key="frame" x="471" y="147" width="60" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Comili-Book" family="Comili" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLt-3S-dVL">
+                                <rect key="frame" x="336" y="150" width="69" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Comili-Book" family="Comili" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="el1-ZL-QtI" userLabel="K1">
+                                <rect key="frame" x="0.0" y="832" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0CT-Ig-xRv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbo-OU-YQs" userLabel="K2">
+                                <rect key="frame" x="64" y="832" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7vY-TT-GqE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMh-My-Cbe" userLabel="K3">
+                                <rect key="frame" x="128" y="832" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wqh-a9-YQP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epJ-Cs-Bxj" userLabel="K4">
+                                <rect key="frame" x="192" y="832" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fzN-vn-eEj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="105" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzH-BC-sgH" userLabel="K5">
+                                <rect key="frame" x="256" y="832" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRs-M4-bfU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="106" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKu-gm-hcC" userLabel="K6">
+                                <rect key="frame" x="320" y="832" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="802-fs-Gin"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="107" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAQ-J5-OxR" userLabel="K7">
+                                <rect key="frame" x="384" y="832" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yCk-vf-XQz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="108" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KX9-Ma-kWE" userLabel="K8">
+                                <rect key="frame" x="448" y="832" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ist-9h-lxd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="109" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44e-Ib-hV4" userLabel="K9">
+                                <rect key="frame" x="512" y="832" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lQJ-71-5yP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="110" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EE8-uG-5Kp" userLabel="K10">
+                                <rect key="frame" x="576" y="832" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAR-Hc-z66"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="111" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dr-aG-NQO" userLabel="K11">
+                                <rect key="frame" x="640" y="832" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ade-26-G1f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="112" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bA8-eS-vUq" userLabel="K12">
+                                <rect key="frame" x="704" y="832" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PY8-zP-VHg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="113" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lip-Ga-8xS" userLabel="K13">
+                                <rect key="frame" x="0.0" y="896" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uNJ-Mt-hHQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="114" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENN-Rm-1G7" userLabel="K14">
+                                <rect key="frame" x="64" y="896" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KuQ-oF-bET"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="115" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkX-Vc-CQ8" userLabel="K15">
+                                <rect key="frame" x="128" y="896" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hNK-V1-wBA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="116" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0A-fH-St9" userLabel="K16">
+                                <rect key="frame" x="192" y="896" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UBA-eh-B5r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="117" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4B-Lb-2ff" userLabel="K17">
+                                <rect key="frame" x="256" y="896" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OjN-63-1l0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="118" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k1-gX-KIa" userLabel="K18">
+                                <rect key="frame" x="320" y="896" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4T-DY-XIK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="119" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f1-bb-1nD" userLabel="K19">
+                                <rect key="frame" x="384" y="896" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkI-0P-cg7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="120" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D04-0f-hRb" userLabel="K20">
+                                <rect key="frame" x="448" y="896" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3yP-PQ-TVt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="121" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MA9-lD-foO" userLabel="K21">
+                                <rect key="frame" x="512" y="896" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n4s-Py-EYr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="122" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9F7-t6-fEl" userLabel="K22">
+                                <rect key="frame" x="576" y="896" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vco-fj-ACf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="123" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuh-0u-tzR" userLabel="K23">
+                                <rect key="frame" x="640" y="896" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZYF-zq-pHw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="124" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqs-LE-Iqs" userLabel="K24">
+                                <rect key="frame" x="704" y="896" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="Vajutati_1A:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2RW-Sm-nrs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="giU-xD-jjE"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
+                    <connections>
+                        <outlet property="Kaotatud_1" destination="el1-ZL-QtI" id="GOD-aq-0gT"/>
+                        <outlet property="Kaotatud_10" destination="EE8-uG-5Kp" id="Z8V-Lc-CNU"/>
+                        <outlet property="Kaotatud_11" destination="9dr-aG-NQO" id="t6r-GY-cba"/>
+                        <outlet property="Kaotatud_12" destination="bA8-eS-vUq" id="5As-1I-G5S"/>
+                        <outlet property="Kaotatud_13" destination="lip-Ga-8xS" id="nRd-CX-haw"/>
+                        <outlet property="Kaotatud_14" destination="ENN-Rm-1G7" id="w1J-2S-jeE"/>
+                        <outlet property="Kaotatud_15" destination="UkX-Vc-CQ8" id="1o8-Td-ed5"/>
+                        <outlet property="Kaotatud_16" destination="U0A-fH-St9" id="FeL-VR-ffs"/>
+                        <outlet property="Kaotatud_17" destination="Z4B-Lb-2ff" id="MPg-eO-6VO"/>
+                        <outlet property="Kaotatud_18" destination="0k1-gX-KIa" id="kMJ-Ni-PJU"/>
+                        <outlet property="Kaotatud_19" destination="6f1-bb-1nD" id="uu7-6w-xti"/>
+                        <outlet property="Kaotatud_2" destination="vbo-OU-YQs" id="RaS-ig-0pg"/>
+                        <outlet property="Kaotatud_20" destination="D04-0f-hRb" id="vCF-q6-pPF"/>
+                        <outlet property="Kaotatud_21" destination="MA9-lD-foO" id="YgV-2K-DYP"/>
+                        <outlet property="Kaotatud_22" destination="9F7-t6-fEl" id="WQc-RI-dH0"/>
+                        <outlet property="Kaotatud_23" destination="Cuh-0u-tzR" id="3Uk-WY-tQ8"/>
+                        <outlet property="Kaotatud_24" destination="gqs-LE-Iqs" id="kdI-WN-ldc"/>
+                        <outlet property="Kaotatud_3" destination="mMh-My-Cbe" id="2UQ-pa-anc"/>
+                        <outlet property="Kaotatud_4" destination="epJ-Cs-Bxj" id="o4c-b8-PSi"/>
+                        <outlet property="Kaotatud_5" destination="EzH-BC-sgH" id="ffs-zM-uZF"/>
+                        <outlet property="Kaotatud_6" destination="uKu-gm-hcC" id="A85-8H-5KK"/>
+                        <outlet property="Kaotatud_7" destination="BAQ-J5-OxR" id="EfG-UF-xKV"/>
+                        <outlet property="Kaotatud_8" destination="KX9-Ma-kWE" id="faq-oL-UFV"/>
+                        <outlet property="Kaotatud_9" destination="44e-Ib-hV4" id="7HA-sF-VRQ"/>
+                        <outlet property="Must_Silt" destination="ScN-dm-UgY" id="oOC-sX-xUy"/>
+                        <outlet property="Punane_Silt" destination="VLC-OM-pqe" id="c28-YQ-V8G"/>
+                        <outlet property="Ruut_1A" destination="psk-9I-AaS" id="3RX-JF-si6"/>
+                        <outlet property="Ruut_1B" destination="hp9-SD-Rnx" id="f3P-RQ-SGg"/>
+                        <outlet property="Ruut_1C" destination="syR-yO-zdP" id="tii-18-2ZO"/>
+                        <outlet property="Ruut_1D" destination="ydS-0v-OO9" id="ec2-J5-u9L"/>
+                        <outlet property="Ruut_1E" destination="yFx-hU-pHN" id="Kok-N2-JYM"/>
+                        <outlet property="Ruut_1F" destination="fnL-RJ-r27" id="Irr-zz-DqZ"/>
+                        <outlet property="Ruut_1G" destination="Itj-Mt-ugF" id="zo6-1R-Ag3"/>
+                        <outlet property="Ruut_1H" destination="H8N-Eo-z72" id="jlb-Mg-P9O"/>
+                        <outlet property="Ruut_2A" destination="qRt-6w-4vu" id="Uba-oG-KFh"/>
+                        <outlet property="Ruut_2B" destination="h20-Ny-bie" id="CHC-g0-Jcr"/>
+                        <outlet property="Ruut_2C" destination="DrC-hQ-k4z" id="Tjy-Wb-7Ip"/>
+                        <outlet property="Ruut_2D" destination="c4g-E1-T4l" id="JrP-Ry-F41"/>
+                        <outlet property="Ruut_2E" destination="bu9-C2-cwV" id="HxX-8N-GWD"/>
+                        <outlet property="Ruut_2F" destination="XVH-yJ-ALP" id="sti-yT-Qdz"/>
+                        <outlet property="Ruut_2G" destination="Nz4-0f-9rB" id="9Oo-aC-tln"/>
+                        <outlet property="Ruut_2H" destination="Sil-qr-3kY" id="u0Z-ty-dJ1"/>
+                        <outlet property="Ruut_3A" destination="VZk-YY-8kM" id="00m-P4-EbD"/>
+                        <outlet property="Ruut_3B" destination="2Et-y7-uYd" id="QFO-6f-aHf"/>
+                        <outlet property="Ruut_3C" destination="ayG-jp-GYZ" id="xLG-df-t7Y"/>
+                        <outlet property="Ruut_3D" destination="dm9-Qv-3Ji" id="f4l-ZJ-rwl"/>
+                        <outlet property="Ruut_3E" destination="TYC-V5-4tg" id="fzQ-sM-wOc"/>
+                        <outlet property="Ruut_3F" destination="ooq-th-UOA" id="gLD-Bg-maS"/>
+                        <outlet property="Ruut_3G" destination="j0Q-EA-tRK" id="vL3-Fg-cWo"/>
+                        <outlet property="Ruut_3H" destination="vCO-1X-EuT" id="eSO-PG-1wv"/>
+                        <outlet property="Ruut_4A" destination="Pv8-t6-67V" id="L6x-UQ-BBO"/>
+                        <outlet property="Ruut_4B" destination="8Q6-Ic-KzV" id="LbD-27-MEf"/>
+                        <outlet property="Ruut_4C" destination="hIk-K7-D2j" id="obd-wN-lHa"/>
+                        <outlet property="Ruut_4D" destination="SfE-bk-7cG" id="3Q1-OZ-jGI"/>
+                        <outlet property="Ruut_4E" destination="qLS-4L-SXD" id="bEu-sl-0f3"/>
+                        <outlet property="Ruut_4F" destination="cqF-27-yDp" id="Ido-NE-ou2"/>
+                        <outlet property="Ruut_4G" destination="1dw-uM-ipW" id="De8-J2-1kv"/>
+                        <outlet property="Ruut_4H" destination="AXf-Xu-64P" id="GdM-lW-y9G"/>
+                        <outlet property="Ruut_5A" destination="zfk-lh-274" id="Hz9-M0-tra"/>
+                        <outlet property="Ruut_5B" destination="qo2-oj-9ye" id="Vms-7A-gEP"/>
+                        <outlet property="Ruut_5C" destination="erq-JH-xab" id="gWw-Oa-Dkv"/>
+                        <outlet property="Ruut_5D" destination="HSW-CF-pb5" id="kOg-XY-PeF"/>
+                        <outlet property="Ruut_5E" destination="hlx-cK-OLt" id="Xsh-xD-WWX"/>
+                        <outlet property="Ruut_5F" destination="Lbd-1M-3a2" id="WMK-qI-dMi"/>
+                        <outlet property="Ruut_5G" destination="235-4b-JYi" id="0Xg-AZ-EDz"/>
+                        <outlet property="Ruut_5H" destination="Uei-MT-ipr" id="5be-aR-V7C"/>
+                        <outlet property="Ruut_6A" destination="bkz-xo-0Ts" id="g4a-sr-b6P"/>
+                        <outlet property="Ruut_6B" destination="PeG-3H-ih2" id="Cf9-d7-JCz"/>
+                        <outlet property="Ruut_6C" destination="ddi-Cc-ItB" id="SF7-nu-N68"/>
+                        <outlet property="Ruut_6D" destination="Ogz-w3-I1B" id="Zq9-tE-EWr"/>
+                        <outlet property="Ruut_6E" destination="Fgj-ht-zLv" id="RrT-oe-QmJ"/>
+                        <outlet property="Ruut_6F" destination="kNs-La-aLs" id="cTd-wy-sMd"/>
+                        <outlet property="Ruut_6G" destination="KLk-df-Sdh" id="8KR-Te-fbS"/>
+                        <outlet property="Ruut_6H" destination="eQZ-Aa-BAO" id="Ysc-3X-hbY"/>
+                        <outlet property="Ruut_7A" destination="Pkf-jA-9ZB" id="VBv-28-one"/>
+                        <outlet property="Ruut_7B" destination="Afx-Jk-MdH" id="GCq-Li-Dea"/>
+                        <outlet property="Ruut_7C" destination="6Pa-72-Ab8" id="YPg-8J-maW"/>
+                        <outlet property="Ruut_7D" destination="VTe-WI-8Qh" id="lgB-1h-1RZ"/>
+                        <outlet property="Ruut_7E" destination="GSW-dx-PUc" id="noz-h7-jZp"/>
+                        <outlet property="Ruut_7F" destination="js4-MN-xuh" id="9EF-xz-eAr"/>
+                        <outlet property="Ruut_7G" destination="jGm-eK-ZFy" id="esa-AI-lmb"/>
+                        <outlet property="Ruut_7H" destination="aRb-a0-YCB" id="Rqk-4a-7Ba"/>
+                        <outlet property="Ruut_8A" destination="FkO-Ux-gyM" id="Mwp-yA-gfZ"/>
+                        <outlet property="Ruut_8B" destination="3le-pf-tOx" id="ItB-Gf-A6n"/>
+                        <outlet property="Ruut_8C" destination="deY-mI-68r" id="YM1-1W-fld"/>
+                        <outlet property="Ruut_8D" destination="aVk-kC-lae" id="FOy-fn-a5A"/>
+                        <outlet property="Ruut_8E" destination="3bo-az-jG9" id="Q3b-fx-9dE"/>
+                        <outlet property="Ruut_8F" destination="U6w-yN-1li" id="Xy6-XA-XeD"/>
+                        <outlet property="Ruut_8G" destination="nJW-vc-W5Q" id="Mgf-Qa-UTO"/>
+                        <outlet property="Ruut_8H" destination="i3b-ly-aW8" id="hKK-o4-5El"/>
+                        <outlet property="Silt" destination="3Pp-Vy-AeN" id="4Hi-6x-JcZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.40625" y="121.87499999999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Must-Nupp-1" width="64" height="64"/>
+        <image name="Punane-Nupp-1" width="64" height="64"/>
+        <image name="Taust" width="768" height="1024"/>
+    </resources>
+</document>
